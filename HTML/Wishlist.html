@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        
+        <meta
+            name="description"
+            content="Furniture store website inspired from other couple of furniture websites"
+        />
+        <meta
+            name="keywords"
+            content="Furniture,chair,bed,rooms,decor,catalogue-element-cupboard"
+        />
+        <meta name="author" content="Unknown" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Furniture</title>
+
+        <link
+            rel="icon"
+            href="../Images/Icons/TitleIcon.svg"
+            type="image/svg"
+        />
+
+        <link rel="stylesheet" href="../CSS/main.css" />
+        <link rel="stylesheet" href="../CSS/Wishlist.css" />
+
+        <script src="../JS/wishlist.js"></script>
+        <script src="../JS/main.js"></script>
+
+    </head>
+    <body>
+        <div id="menu-side-back" onclick="closeSideMenu()"></div>
+        <div id="close-menu" onclick="closeSideMenu()"></div>
+
+         <div id="menu-side">
+            <ul id="menu-side-main">
+                <li>
+                    <a
+                        href="Catalogue.html"
+                        onclick="changesent('all')"
+                        onmouseover="openSubMenu('1')"
+                        >Best Sections</a
+                    >
+                </li>
+                <li>
+                    <a
+                    href="Catalogue.html"
+                    onclick="changesent('all')"
+                    onmouseover="openSubMenu('2')"
+                    >Catalogue</a
+                >
+                </li>
+                <li>
+                    <a href="#" onmouseover="openSubMenu('3')">About</a>
+                </li>
+                <li>
+                    <a href="Login.html" onmouseover="closeSubMenu()" >Login</a>
+                </li>
+                <li>
+                    <a href="Wishlist.html" onmouseover="closeSubMenu()">Wishlist</a>
+                </li>
+            </ul>
+            
+            <div class="social-media">
+                <a href="">Facebook</a>-<a href="">Instagram</a>-<a href=""
+                    >Twitter</a
+                >
+            </div>
+        </div>
+        
+        <div id="menu-side-res">
+            <ul>
+                <li>
+                    <a
+                        href="Catalogue.html"
+                        onclick="changesent('all')"
+                        >Best Sections</a
+                    >
+                </li>
+                <li>
+                    <a
+                    href="Catalogue.html"
+                    onclick="changesent('all')"
+                   
+                    >Catalogue</a
+                >
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="Login.html">Login</a>
+                </li>
+                <li>
+                    <a href="Wishlist.html">Wishlist</a>
+                </li>
+                <li>
+                    <a href="Bag.html">Bag</a>
+                </li>
+            </ul>
+            
+            <div class="social-media">
+                <a href="">Facebook</a>-<a href="">Instagram</a>-<a href=""
+                    >Twitter</a
+                >
+            </div>
+        </div>
+
+        <div id="submenu-side">
+            <div id="submen1">
+                <ul>
+                    <li><a onclick="changesent('sofa')" href="Catalogue.html" >Sofas</a></li>
+                    <li><a onclick="changesent('bed')" href="Catalogue.html">Beds</a></li>
+                    <li><a onclick="changesent('dining')" href="Catalogue.html">Dining</a></li>            
+                    <li><a onclick="changesent('seating')" href="Catalogue.html">Seating</a></li>
+                    <li style="opacity: 0;"><a href="#"></a></li>
+                </ul>
+            </div>
+            <div id="submen2">
+                <ul>
+                    <li><a onclick="changesent('cupboard')" href="Catalogue.html">Cupboard</a></li>
+                    <li><a onclick="changesent('bookshelves')" href="Catalogue.html">Bookshelves</a></li>
+                    <li><a onclick="changesent('decor')" href="Catalogue.html">Decor</a></li>
+                    <li><a onclick="changesent('coffetable')" href="Catalogue.html">Coffe Tables</Table></a></li>
+                    <li style="opacity: 0;"><a></a></li>
+                </ul>
+            </div>
+            <div id="submen3">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Stores</a></li>
+                    <li><a>Contacts</a></li>
+                    <li><a>Shipping Info</a></li>
+                </ul>
+            </div>  
+        </div>
+
+        <div id="menu-up">
+            <div class="menu-up-element">
+                <a onclick="menuChoose()">Menu</a>
+            </div>
+            <h1><a href="../index.html">Furniture</a></h1>
+            <div class="menu-up-element" id="mini-menu">
+                <div class="mini-menu-element" > <span id="search-text" onclick="openSearch()">Search</span></div>
+                <div class="mini-menu-element">
+                    <a href="Login.html">Login</a>
+                </div>
+                <div class="mini-menu-element">
+                    <a href="Wishlist.html">Wishlist</a>
+                </div>
+                <div class="mini-menu-element"> <a href="Bag.html"> Bag</a></div>
+            </div>
+        </div>
+
+        <div id="content-container">
+            <div id="table"></div>
+        </div>
+        
+        <footer>
+            <div id="footer-content">
+                <div class="footer-left-flex">
+                    <div id="footer-logo">Furniture</div>
+                    <div id="footer-lists">
+                        <ul>
+                            <li><a href="">Design Consultation</a></li>
+                            <li><a href="">Our Stores</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Contacts</a></li>
+                            <li><a href="">FAQs</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Shipping Info</a></li>
+                            <li><a href="">Care & Maintenance</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li>&copy;2021.All rights reserved</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="footer-right-flex">
+                    <div><b>Keep in touch</b></div>
+                    <div class="txthlpfoot">
+                        <p>Subscribe to our newsletter</p>
+                    </div>
+                    <div class="inputs-style">
+                        <label for="emailLogfooter">Email: </label>
+                        <input
+                            type="emailfooter"
+                            name="emailLogfooter"
+                            id="emailLogfooter"
+                        />
+                    </div>
+                    <hr width="100%" />
+                    <br />
+                    <b>Follow us</b>
+                    <div class="social-media">
+                        <a href="">Facebook</a>-<a href="">Instagram</a>-<a
+                            href=""
+                            >Twitter</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
