@@ -1,4 +1,4 @@
 # Furniture E-commerce site
-Using HTML, CSS and JS
 
+## Main Page
 ![](Img/Main.jpg)
